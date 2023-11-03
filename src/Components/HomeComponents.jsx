@@ -22,7 +22,7 @@ function HomeComponents() {
 }
 
 const StyledHomeComponents = styled.div`
-  height: 51rem;
+  height: 45rem;
   max-width: 1560px;
   display: flex;
   justify-content: center;

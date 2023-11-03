@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Recipefinder Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Website allow the users to find Healthy and Tasty food that they can .
 
-## Available Scripts
+## API
 
 In the project directory, you can run:
 

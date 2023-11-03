@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className="HomePage">
       <HomePage>
-        {/* <HomeComponents />
-        <About /> */}
+        <HomeComponents />
+        <About />
       </HomePage>
     </div>
   );
