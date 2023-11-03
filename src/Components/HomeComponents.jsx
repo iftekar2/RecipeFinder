@@ -35,9 +35,18 @@ const HomeImages = styled.div`
   align-items: center;
   gap: 6vw;
 
-  img {
-    height: 6vw;
-    width: 6vw;
+  @media (max-width: 1510px) {
+    img {
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+
+  @media (max-width: 950px) {
+    img {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 `;
 
@@ -47,19 +56,38 @@ const HomePageTitle = styled.div`
   align-items: center;
   gap: 0.5rem;
 
-  h1 {
-    color: #f25a24;
-    font-size: 4vw;
-    margin: 0rem;
+  @media (max-width: 1510px) {
+    h1 {
+      color: #f25a24;
+      font-size: 3.5rem;
+      margin: 0rem;
+    }
+
+    p {
+      font-size: 3.5rem;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0rem;
+    }
   }
 
-  p {
-    font-size: 3vw;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem;
+  @media (max-width: 950px) {
+    h1 {
+      color: #f25a24;
+      font-size: 1.8rem;
+      margin: 0rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0rem;
+    }
   }
 `;
 
