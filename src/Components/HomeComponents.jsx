@@ -22,7 +22,7 @@ function HomeComponents() {
 }
 
 const StyledHomeComponents = styled.div`
-  height: 100vh;
+  height: 51rem;
   max-width: 1560px;
   display: flex;
   justify-content: center;
@@ -33,11 +33,11 @@ const HomeImages = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 6vw;
 
   img {
-    height: 6rem;
-    width: 6rem;
+    height: 6vw;
+    width: 6vw;
   }
 `;
 
@@ -49,12 +49,12 @@ const HomePageTitle = styled.div`
 
   h1 {
     color: #f25a24;
-    font-size: 4.5rem;
+    font-size: 4vw;
     margin: 0rem;
   }
 
   p {
-    font-size: 3rem;
+    font-size: 3vw;
     color: black;
     display: flex;
     justify-content: center;

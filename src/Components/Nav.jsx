@@ -1,123 +1,112 @@
-import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import "./style.css";
+import { useState } from "react";
 
 function Nav() {
+  const [burgerMenu, setBurgerMenu] = useState(false);
+
   return (
-    <div className="NavComponent">
-      <NavSection>
-        <Logo>
-          <p>foodie .</p>
-        </Logo>
-        <NavOptions>
-          <HomeItem>
-            <button>Home</button>
-          </HomeItem>
-          <AboutItem>
-            <button>About</button>
-          </AboutItem>
-          <FavoritItem>
-            <button>Favorit</button>
-          </FavoritItem>
-          <FAQItem>
-            <button>FAQ</button>
-          </FAQItem>
-          <MenuItem>
-            <button>Menu</button>
-          </MenuItem>
-        </NavOptions>
-      </NavSection>
-    </div>
+    <section className="navSection">
+      <div className="navComponent">
+        <div className="websiteName">
+          <NavLink to="/">
+            <p>foodie .</p>
+          </NavLink>
+        </div>
+
+        <div
+          className="burgerMenu"
+          onClick={() => {
+            setBurgerMenu(!burgerMenu);
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className="navItems">
+          <ul className={burgerMenu ? "open" : ""}>
+            <li>
+              <NavLink to="/home">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Favorite">Favorite</NavLink>
+            </li>
+            <li>
+              <NavLink to="/faq">FAQ</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Menu">Menu</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   );
 }
 
-const NavSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff7f4;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-`;
+// const NavSection = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #fff7f4;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 1000;
 
-const Logo = styled.div`
-  font-size: 2rem;
-  position: absolute;
-  left: 0;
-  margin-left: 2rem;
+//   a {
+//     height: 40px;
+//     width: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-decoration: none;
+//   }
+// `;
 
-  p {
-    text-align: left;
-  }
-`;
+// const Logo = styled.div`
+//   font-size: 2rem;
+//   position: absolute;
+//   left: 0;
+//   margin-left: 2rem;
 
-const NavOptions = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin: 1rem;
+//   p {
+//     text-align: left;
+//     color: black;
+//   }
+// `;
 
-  button {
-    background-color: #fff7f4;
-    font-size: 1.5rem;
-    width: 120px;
-    padding: 0;
-    border: 0;
-  }
+// const NavOptions = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 1rem;
+//   height: 30px;
 
-  button:hover {
-    border: 1.5px solid black;
-    cursor: pointer;
-    border-radius: 50%;
-    height: 40px;
-    width: 100px;
-  }
-`;
+//   ul {
+//     list-style-type: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 2rem;
+//   }
 
-const HomeItem = styled.div`
-  color: red;
-  margin: 0;
-  height: 40px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-`;
+//   li {
+//     font-size: 1.5rem;
+//   }
 
-const AboutItem = styled.div`
-  color: red;
-  margin: 0;
-  height: 40px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-`;
+//   a {
+//     color: black;
+//   }
 
-const FavoritItem = styled.div`
-  color: red;
-  margin: 0;
-  height: 40px;
-  width: 120px;
-  display: flex;
-  justify-content: center;
-`;
-
-const FAQItem = styled.div`
-  color: red;
-  margin: 0;
-  height: 40px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-`;
-
-const MenuItem = styled.div`
-  color: red;
-  margin: 0;
-  height: 40px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-`;
+//   a:hover {
+//     background-color: #b7e3e4;
+//     border-radius: 20px;
+//   }
+// `;
 
 export default Nav;
