@@ -35,7 +35,7 @@ const HomeImages = styled.div`
   align-items: center;
   gap: 6vw;
 
-  @media (max-width: 1510px) {
+  @media (max-width: 1512px) {
     img {
       height: 6rem;
       width: 6rem;
@@ -56,7 +56,7 @@ const HomePageTitle = styled.div`
   align-items: center;
   gap: 0.5rem;
 
-  @media (max-width: 1510px) {
+  @media (max-width: 1520px) {
     h1 {
       color: #f25a24;
       font-size: 3.5rem;
