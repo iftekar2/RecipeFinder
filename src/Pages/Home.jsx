@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import HomeComponents from "../Components/HomeComponents";
 import About from "../Components/About";
-// import Favorite from "../Components/Favorite";
+import Favorite from "../Components/Favorite";
 // import FAQ from "../Components/FAQ";
 // import Footer from "../Components/Footer";
 
@@ -12,6 +12,7 @@ function Home() {
       <HomePage>
         <HomeComponents />
         <About />
+        <Favorite />
       </HomePage>
     </div>
   );

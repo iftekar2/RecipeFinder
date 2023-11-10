@@ -46,7 +46,7 @@ function About() {
     <AboutSection>
       <div className="aboutSection">
         <AboutTitle>
-          <h1>About</h1>
+          <p>About</p>
         </AboutTitle>
         <AboutComponetns>
           <LeftDiv onClick={() => handleDivClick("left")}>
@@ -71,7 +71,6 @@ const AboutSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45rem;
 `;
 
 const AboutComponetns = styled.div`
@@ -86,6 +85,10 @@ const AboutTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  p{
+    font-size: 1.5rem; 
+  }
 `;
 
 const StyledDiv = styled.div`
