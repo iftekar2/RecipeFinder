@@ -56,6 +56,7 @@ const NavContainer = styled.div`
   top: 0;
   z-index: 1;
   background-color: #fff7f4;
+  height: 4rem;
 `;
 
 const WebsiteTitle = styled.div`
