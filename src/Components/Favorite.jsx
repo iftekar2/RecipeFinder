@@ -290,6 +290,23 @@ const Recipes = styled.div`
   }
 `;
 
-const RecipesButton = styled.div``;
+const RecipesButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    margin-top: 2rem;
+    background: #effbe4;
+    height: 3rem;
+    width: 12rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  margin-bottom: 2rem;
+`;
 
 export default Favorite;
