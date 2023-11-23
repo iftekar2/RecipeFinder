@@ -1,13 +1,32 @@
-import React from "react";
 import styled from "styled-components";
+import { useEffect, useState } from "react";
 
 function Favorite() {
+  const [popular, setPopular] = useState([]);
+
+  useEffect(() => {
+    const getPopular = async () => {
+      try {
+        const api = await fetch(
+          `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=6`
+        );
+        const data = await api.json();
+        setPopular(data.recipes);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    getPopular();
+  }, []);
+
   return (
     <FavoriteSection>
       <div className="About">
         <FavoriteTitle>
           <p>Favorite</p>
         </FavoriteTitle>
+
         <div className="favoriteComponents">
           <div className="countries">
             <Countries>
@@ -28,7 +47,6 @@ function Favorite() {
               </Japanese>
             </Countries>
           </div>
-
           <SearchBar>
             <input type="text" placeholder="Find Food" />
             <button>
@@ -37,12 +55,14 @@ function Favorite() {
           </SearchBar>
 
           <Recipes>
-            <div className="firstRecipe"></div>
-            <div className="secondRecipe"></div>
-            <div className="thirdRecipe"></div>
-            <div className="forthRecipe"></div>
-            <div className="fifthRecipe"></div>
-            <div className="sixthRecipe"></div>
+            {popular.map((recipe) => (
+              <div key={recipe.id} className="randomRecipe">
+                <img src={recipe.image} alt={recipe.title} />
+                <div className="recipeNameOverlay">
+                  <h1>{recipe.title}</h1>
+                </div>
+              </div>
+            ))}
           </Recipes>
 
           <RecipesButton>
@@ -275,18 +295,47 @@ const Recipes = styled.div`
   gap: 1rem;
   margin-top: 2rem;
 
-  div {
+  .randomRecipe {
+    position: relative;
     height: 30rem;
     width: 25rem;
     border: 2px solid black;
-  }
+    overflow: hidden;
+
+    img {
+      height: 30rem;
+      width: 25rem;
+      object-fit: cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .recipeNameOverlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%; /* Adjust the width as needed */
+      text-align: center;
+      color: black;
+      font-size: 1.3rem;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    &:hover .recipeNameOverlay {
+      opacity: 1;
+    }
+
+    &:hover img {
+      opacity: 0;
+    }
+  
 
   @media (max-width: 950px) {
-    div {
-      height: 28rem;
-      width: 22rem;
-      border: 2px solid black;
-    }
+    height: 28rem;
+    width: 22rem;
   }
 `;
 
