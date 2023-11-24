@@ -314,28 +314,37 @@ const Recipes = styled.div`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 90%; /* Adjust the width as needed */
+      width: 100%;
       text-align: center;
-      color: black;
-      font-size: 1.3rem;
+      color: white;
+      font-size: 1.5rem;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      z-index: 2;
     }
 
-    &:hover .recipeNameOverlay {
-      opacity: 1;
+    @media (hover: hover) and (min-width: 951px) {
+      &:hover .recipeNameOverlay {
+        opacity: 1;
+      }
+
+      &:hover img {
+        opacity: 0;
+      }
     }
 
-    &:hover img {
-      opacity: 0;
-    }
-  
+    @media (max-width: 950px) {
+      height: 28rem;
+      width: 22rem;
 
-  @media (max-width: 950px) {
-    height: 28rem;
-    width: 22rem;
+      .recipeNameOverlay {
+        display: none; /* Hide the name by default in mobile mode */
+      }
+
+      img {
+        opacity: 1; /* Show the image by default in mobile mode */
+      }
+    }
   }
 `;
 
