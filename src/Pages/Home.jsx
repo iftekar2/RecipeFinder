@@ -3,7 +3,7 @@ import styled from "styled-components";
 import HomeComponents from "../Components/HomeComponents";
 import About from "../Components/About";
 import Favorite from "../Components/Favorite";
-// import FAQ from "../Components/FAQ";
+import FAQ from "../Components/FAQ";
 // import Footer from "../Components/Footer";
 
 function Home() {
@@ -13,6 +13,7 @@ function Home() {
         <HomeComponents />
         <About />
         <Favorite />
+        <FAQ />
       </HomePage>
     </div>
   );

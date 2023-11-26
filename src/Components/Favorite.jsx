@@ -320,7 +320,6 @@ const Recipes = styled.div`
       font-size: 1.5rem;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
-      z-index: 2;
     }
 
     @media (hover: hover) and (min-width: 951px) {
