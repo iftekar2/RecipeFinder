@@ -316,7 +316,7 @@ const Recipes = styled.div`
       transform: translate(-50%, -50%);
       width: 100%;
       text-align: center;
-      color: white;
+      color: black;
       font-size: 1.5rem;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
