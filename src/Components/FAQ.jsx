@@ -6,16 +6,89 @@ function FAQ() {
     <FAQSection>
       <div className="faqComponent">
         <div className="faq">
-          <div className="questionOne"></div>
-          <div className="questionTwo"></div>
-          <div className="questionThree"></div>
-          <div className="questionFour"></div>
+          <div className="questionOne">
+            <h1>What type of Cuisine do you specialize in?</h1>
+          </div>
+          <div className="questionTwo">
+            <h1>Do you offer personalized menu plan?</h1>
+          </div>
+          <div className="questionThree">
+            <h1>
+              Can I customize the serving size of the recipe to fit my needs?
+            </h1>
+          </div>
+          <div className="questionFour">
+            <h1>
+              Are nutritional information and calorie counts provided for each
+              recipe?
+            </h1>
+          </div>
         </div>
       </div>
     </FAQSection>
   );
 }
 
-const FAQSection = styled.div``;
+const FAQSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .faq {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 1.5rem;
+  // }
+
+  // .questionOne {
+  //   background: #ff8b8b;
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  //   width: 30rem;
+  //   height: 24rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  // }
+
+  // .questionTwo {
+  //   background: #a6cfe2;
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  //   width: 30rem;
+  //   height: 24rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  // }
+
+  // .questionThree {
+  //   background: #ffdaa3;
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  //   width: 30rem;
+  //   height: 24rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  // }
+
+  // .questionFour {
+  //   background: #fedae1;
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  //   width: 30rem;
+  //   height: 24rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  // }
+`;
 
 export default FAQ;
