@@ -34,61 +34,61 @@ const FAQSection = styled.div`
   justify-content: center;
   align-items: center;
 
-  // .faq {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   align-items: center;
-  //   gap: 1.5rem;
-  // }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
-  // .questionOne {
-  //   background: #ff8b8b;
-  //   padding-left: 1rem;
-  //   padding-right: 1rem;
-  //   width: 30rem;
-  //   height: 24rem;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  // }
+  .questionOne {
+    background: #ff8b8b;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 30rem;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-  // .questionTwo {
-  //   background: #a6cfe2;
-  //   padding-left: 1rem;
-  //   padding-right: 1rem;
-  //   width: 30rem;
-  //   height: 24rem;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  // }
+  .questionTwo {
+    background: #a6cfe2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 30rem;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-  // .questionThree {
-  //   background: #ffdaa3;
-  //   padding-left: 1rem;
-  //   padding-right: 1rem;
-  //   width: 30rem;
-  //   height: 24rem;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  // }
+  .questionThree {
+    background: #ffdaa3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 30rem;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-  // .questionFour {
-  //   background: #fedae1;
-  //   padding-left: 1rem;
-  //   padding-right: 1rem;
-  //   width: 30rem;
-  //   height: 24rem;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   text-align: center;
-  // }
+  .questionFour {
+    background: #fedae1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 30rem;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export default FAQ;
