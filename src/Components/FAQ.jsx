@@ -5,6 +5,9 @@ function FAQ() {
   return (
     <FAQSection>
       <div className="faqComponent">
+        <div className="faqTitle">
+          <p>FAQ</p>
+        </div>
         <div className="faq">
           <div className="questionOne">
             <h1>What type of Cuisine do you specialize in?</h1>
@@ -34,6 +37,13 @@ const FAQSection = styled.div`
   justify-content: center;
   align-items: center;
 
+  .faqTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
   .faq {
     display: flex;
     flex-wrap: wrap;
@@ -44,8 +54,8 @@ const FAQSection = styled.div`
 
   .questionOne {
     background: #ff8b8b;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     width: 30rem;
     height: 24rem;
     display: flex;
@@ -56,8 +66,8 @@ const FAQSection = styled.div`
 
   .questionTwo {
     background: #a6cfe2;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     width: 30rem;
     height: 24rem;
     display: flex;
@@ -68,8 +78,8 @@ const FAQSection = styled.div`
 
   .questionThree {
     background: #ffdaa3;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     width: 30rem;
     height: 24rem;
     display: flex;
@@ -80,8 +90,8 @@ const FAQSection = styled.div`
 
   .questionFour {
     background: #fedae1;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     width: 30rem;
     height: 24rem;
     display: flex;
