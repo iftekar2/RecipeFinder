@@ -54,12 +54,13 @@ const FAQSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 
   .faqTitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .faq {
@@ -116,6 +117,25 @@ const FAQSection = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .questionOne,
+  .questionTwo,
+  .questionThree,
+  .questionFour {
+    p {
+      display: none;
+    }
+
+    &:hover {
+      p {
+        display: block;
+        font-size: 2rem;
+      }
+      h1 {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 950px) {
