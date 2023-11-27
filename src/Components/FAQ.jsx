@@ -11,20 +11,38 @@ function FAQ() {
         <div className="faq">
           <div className="questionOne">
             <h1>What type of Cuisine do you specialize in?</h1>
+            <p>
+              We have many different types of recipes. We have recipes from
+              different countries and we have recipes for people who need
+              accommodations.
+            </p>
           </div>
           <div className="questionTwo">
             <h1>Do you offer personalized menu plan?</h1>
+            <p>
+              We do not offer personalized menu plan. However, you can search
+              for the recipe that you are looking for and you will be able to
+              find it.
+            </p>
           </div>
           <div className="questionThree">
             <h1>
               Can I customize the serving size of the recipe to fit my needs?
             </h1>
+            <p>
+              You can definitely customize the serving size of the recipe to fit
+              your need.
+            </p>
           </div>
           <div className="questionFour">
             <h1>
               Are nutritional information and calorie counts provided for each
               recipe?
             </h1>
+            <p>
+              Nutritional information and calorie counts is not provided for
+              recipes.
+            </p>
           </div>
         </div>
       </div>

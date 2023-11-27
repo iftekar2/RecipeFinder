@@ -337,11 +337,11 @@ const Recipes = styled.div`
       width: 22rem;
 
       .recipeNameOverlay {
-        display: none; /* Hide the name by default in mobile mode */
+        display: none;
       }
 
       img {
-        opacity: 1; /* Show the image by default in mobile mode */
+        opacity: 1;
       }
     }
   }
