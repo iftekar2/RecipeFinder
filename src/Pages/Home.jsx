@@ -4,7 +4,7 @@ import HomeComponents from "../Components/HomeComponents";
 import About from "../Components/About";
 import Favorite from "../Components/Favorite";
 import FAQ from "../Components/FAQ";
-// import Footer from "../Components/Footer";
+import Footer from "../Components/Footer";
 
 function Home() {
   return (
@@ -14,6 +14,7 @@ function Home() {
         <About />
         <Favorite />
         <FAQ />
+        <Footer />
       </HomePage>
     </div>
   );
