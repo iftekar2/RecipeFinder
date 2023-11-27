@@ -99,6 +99,28 @@ const FAQSection = styled.div`
     align-items: center;
     text-align: center;
   }
+
+  @media (max-width: 950px) {
+    .questionOne {
+      width: 20rem;
+      height: 24rem;
+    }
+
+    .questionTwo {
+      width: 20rem;
+      height: 24rem;
+    }
+
+    .questionThree {
+      width: 20rem;
+      height: 24rem;
+    }
+
+    .questionFour {
+      width: 20rem;
+      height: 24rem;
+    }
+  }
 `;
 
 export default FAQ;
