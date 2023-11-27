@@ -298,7 +298,7 @@ const Recipes = styled.div`
   .randomRecipe {
     position: relative;
     height: 30rem;
-    width: 25rem;
+    width: 22rem;
     border: 2px solid black;
     overflow: hidden;
 
@@ -311,15 +311,13 @@ const Recipes = styled.div`
 
     .recipeNameOverlay {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      bottom: 0;
+      left: 0;
       width: 100%;
-      text-align: center;
-      color: black;
-      font-size: 1.5rem;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      box-sizing: border-box;
+      color: white;
     }
 
     @media (hover: hover) and (min-width: 951px) {
@@ -333,11 +331,12 @@ const Recipes = styled.div`
     }
 
     @media (max-width: 950px) {
-      height: 28rem;
-      width: 22rem;
+      height: 34rem;
 
       .recipeNameOverlay {
-        display: none;
+        display: block;
+        opacity: 1;
+        text-align: center;
       }
 
       img {
