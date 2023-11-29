@@ -87,7 +87,7 @@ const FavoriteTitle = styled.div`
   align-items: center;
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 

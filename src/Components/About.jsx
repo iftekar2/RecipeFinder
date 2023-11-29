@@ -50,15 +50,24 @@ function About() {
         </AboutTitle>
         <AboutComponetns>
           <LeftDiv onClick={() => handleDivClick("left")}>
-            <img src="https://cdn.dribbble.com/userupload/7770097/file/original-f94c966d13d74726fb7f70b4dc8653a3.png?resize=2048x1536" alt="Left" />
-            {leftDiv &&<div>{contentLeft}</div>}
+            <img
+              src="https://cdn.dribbble.com/userupload/7770097/file/original-f94c966d13d74726fb7f70b4dc8653a3.png?resize=2048x1536"
+              alt="Left"
+            />
+            {leftDiv && <div>{contentLeft}</div>}
           </LeftDiv>
           <CenterDiv onClick={() => handleDivClick("center")}>
-            <img src="https://cdn.dribbble.com/users/938871/screenshots/11065974/media/83e6966e7b2bcfff14c977daa76bfb7d.jpg?resize=1600x1200&vertical=center" alt="Center" />
+            <img
+              src="https://cdn.dribbble.com/users/938871/screenshots/11065974/media/83e6966e7b2bcfff14c977daa76bfb7d.jpg?resize=1600x1200&vertical=center"
+              alt="Center"
+            />
             {centerDiv && <div>{contentCenter}</div>}
           </CenterDiv>
           <RightDiv onClick={() => handleDivClick("right")}>
-            <img src="https://cdn.dribbble.com/users/465131/screenshots/1718215/vegetables.jpg?resize=800x600&vertical=center" alt="Right" />
+            <img
+              src="https://cdn.dribbble.com/users/465131/screenshots/1718215/vegetables.jpg?resize=800x600&vertical=center"
+              alt="Right"
+            />
             {rightDiv && <div>{contentRight}</div>}
           </RightDiv>
         </AboutComponetns>
@@ -86,8 +95,8 @@ const AboutTitle = styled.div`
   justify-content: center;
   align-items: center;
 
-  p{
-    font-size: 1.5rem; 
+  p {
+    font-size: 2rem;
   }
 `;
 
@@ -100,9 +109,9 @@ const StyledDiv = styled.div`
     bottom: 0;
     background: white;
     text-align: center;
-    height: 100%;  
-    width: 100%; 
-    border-radius: 5%; 
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,87 +128,86 @@ const StyledDiv = styled.div`
   }
 `;
 
-
 const LeftDiv = styled(StyledDiv)`
-@media (max-width: 1520px) {
-  height: 55vh;
-  width: 28vw;
-  border-radius: 5%;
-
-  img {
+  @media (max-width: 1520px) {
     height: 55vh;
     width: 28vw;
     border-radius: 5%;
+
+    img {
+      height: 55vh;
+      width: 28vw;
+      border-radius: 5%;
+    }
   }
-}
 
-@media (max-width: 950px) {
-  height: 30vh;
-  width: 60vw;
-  border-radius: 5%;
-
-  img {
+  @media (max-width: 950px) {
     height: 30vh;
     width: 60vw;
     border-radius: 5%;
-    border: 1px solid black;
+
+    img {
+      height: 30vh;
+      width: 60vw;
+      border-radius: 5%;
+      border: 1px solid black;
+    }
   }
-}
 `;
 
 const CenterDiv = styled(StyledDiv)`
-@media (max-width: 1520px) {
-  height: 55vh;
-  width: 28vw;
-  border-radius: 5%;
-  border: 1px solid black;
-
-  img {
+  @media (max-width: 1520px) {
     height: 55vh;
     width: 28vw;
     border-radius: 5%;
+    border: 1px solid black;
+
+    img {
+      height: 55vh;
+      width: 28vw;
+      border-radius: 5%;
+    }
   }
-}
 
-@media (max-width: 950px) {
-  height: 30vh;
-  width: 60vw;
-  border-radius: 5%;
-
-  img {
+  @media (max-width: 950px) {
     height: 30vh;
     width: 60vw;
     border-radius: 5%;
-    border: 1px solid black;
+
+    img {
+      height: 30vh;
+      width: 60vw;
+      border-radius: 5%;
+      border: 1px solid black;
+    }
   }
-}
 `;
 
 const RightDiv = styled(StyledDiv)`
-@media (max-width: 1520px) {
-  height: 55vh;
-  width: 28vw;
-  border-radius: 5%;
-
-  img {
+  @media (max-width: 1520px) {
     height: 55vh;
     width: 28vw;
     border-radius: 5%;
+
+    img {
+      height: 55vh;
+      width: 28vw;
+      border-radius: 5%;
+    }
   }
-}
 
-@media (max-width: 950px) {
-  height: 30vh;
-  width: 60vw;
-  border-radius: 5%;
-
-  img {
+  @media (max-width: 950px) {
     height: 30vh;
     width: 60vw;
     border-radius: 5%;
-    border: 1px solid black;
+
+    img {
+      height: 30vh;
+      width: 60vw;
+      border-radius: 5%;
+      border: 1px solid black;
+    }
   }
-}
 `;
 
 export default About;
