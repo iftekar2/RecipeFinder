@@ -300,47 +300,36 @@ const Recipes = styled.div`
     height: 30rem;
     width: 22rem;
     border: 2px solid black;
-    overflow: hidden;
 
     img {
       height: 30rem;
-      width: 25rem;
+      width: 22rem;
       object-fit: cover;
       transition: opacity 0.3s ease-in-out;
     }
 
     .recipeNameOverlay {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      box-sizing: border-box;
-      color: white;
-    }
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
 
-    @media (hover: hover) and (min-width: 951px) {
-      &:hover .recipeNameOverlay {
-        opacity: 1;
-      }
-
-      &:hover img {
-        opacity: 0;
+      h1 {
+        color: black;
       }
     }
 
-    @media (max-width: 950px) {
-      height: 34rem;
-
+    &:hover {
       .recipeNameOverlay {
-        display: block;
         opacity: 1;
-        text-align: center;
       }
 
       img {
-        opacity: 1;
+        opacity: 0;
       }
     }
   }
