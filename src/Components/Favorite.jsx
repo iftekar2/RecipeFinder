@@ -229,7 +229,7 @@ const SearchBar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-top: 2rem;
 
   input {
@@ -240,6 +240,7 @@ const SearchBar = styled.div`
     padding-left: 20px;
     border-radius: 50px;
     border: 2px solid black;
+    margin-left: -15px;
   }
 
   button {
@@ -317,6 +318,7 @@ const Recipes = styled.div`
       text-align: center;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
+      width: 18rem;
 
       h1 {
         color: black;
@@ -339,6 +341,7 @@ const RecipesButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 
   button {
     margin-top: 2rem;

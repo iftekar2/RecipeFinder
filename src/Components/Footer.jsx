@@ -23,6 +23,7 @@ const FooterSection = styled.div`
 
   p {
     font-size: 1.3rem;
+    text-align: center;
   }
 `;
 
