@@ -1,4 +1,4 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 function Categories() {
@@ -6,21 +6,31 @@ function Categories() {
     <CategoriesSection>
       <div className="categories">
         <Countries>
-          <Italian>
-            <img src="https://cdn-icons-png.flaticon.com/512/4624/4624250.png" />
-          </Italian>
-          <American>
-            <img src="https://cdn-icons-png.flaticon.com/512/2505/2505032.png" />
-          </American>
-          <Indian>
-            <img src="https://cdn-icons-png.flaticon.com/512/4727/4727322.png" />
-          </Indian>
-          <Chinese>
-            <img src="https://cdn-icons-png.flaticon.com/512/1623/1623786.png" />
-          </Chinese>
-          <Japanese>
-            <img src="https://cdn-icons-png.flaticon.com/512/12391/12391176.png" />
-          </Japanese>
+          <NavLink to={"/cuisine/Italian"}>
+            <Italian>
+              <img src="https://cdn-icons-png.flaticon.com/512/4624/4624250.png" />
+            </Italian>
+          </NavLink>
+          <NavLink to={"/cuisine/American"}>
+            <American>
+              <img src="https://cdn-icons-png.flaticon.com/512/2505/2505032.png" />
+            </American>
+          </NavLink>
+          <NavLink to={"/cuisine/Indian"}>
+            <Indian>
+              <img src="https://cdn-icons-png.flaticon.com/512/4727/4727322.png" />
+            </Indian>
+          </NavLink>
+          <NavLink to={"/cuisine/Chinese"}>
+            <Chinese>
+              <img src="https://cdn-icons-png.flaticon.com/512/1623/1623786.png" />
+            </Chinese>
+          </NavLink>
+          <NavLink to={"/cuisine/Japanese"}>
+            <Japanese>
+              <img src="https://cdn-icons-png.flaticon.com/512/12391/12391176.png" />
+            </Japanese>
+          </NavLink>
         </Countries>
       </div>
     </CategoriesSection>
