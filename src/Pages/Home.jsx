@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Nav from "../Components/Nav";
 import HomeComponents from "../Components/HomeComponents";
 import About from "../Components/About";
 import Favorite from "../Components/Favorite";
@@ -9,6 +10,7 @@ function Home() {
   return (
     <div className="HomePage">
       <HomePage>
+        <Nav />
         <HomeComponents />
         <About />
         <Favorite />
