@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import Home from "./Pages/Home";
+import Nav from "./Components/Nav";
 
 function App() {
   return (
     <AppSection>
+      <Nav />
       <Home />
     </AppSection>
   );
