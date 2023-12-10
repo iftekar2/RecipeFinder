@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import Categories from "./Categories";
+import { NavLink } from "react-router-dom";
 
 function Favorite() {
   const [popular, setPopular] = useState([]);
@@ -51,7 +52,9 @@ function Favorite() {
           </Recipes>
 
           <RecipesButton>
-            <button>Recipes</button>
+            <NavLink to="/menu">
+              <button>Recipes</button>
+            </NavLink>
           </RecipesButton>
         </div>
       </div>
