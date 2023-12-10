@@ -1,12 +1,21 @@
+import { Route, Routes, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./Pages/Home";
-import Nav from "./Components/Nav";
+import Nav from "./Nav";
 
 function App() {
+  const navigate = useNavigate();
+
+  const redirectToMainPage = () => {
+    navigate("/");
+  };
+
   return (
     <AppSection>
       <Nav />
-      <Home />
+      <Routes>
+        <Route path="*" element={<Home onClick={redirectToMainPage} />} />
+      </Routes>
     </AppSection>
   );
 }
