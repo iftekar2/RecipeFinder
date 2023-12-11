@@ -3,16 +3,10 @@ import MenuComponent from "../Components/MenuComponent";
 
 function Menu() {
   return (
-    <MenuSection>
+    <div>
       <MenuComponent />
-    </MenuSection>
+    </div>
   );
 }
-
-const MenuSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 export default Menu;
